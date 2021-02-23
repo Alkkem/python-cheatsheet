@@ -91,7 +91,7 @@ value  = <dict>.setdefault(key, default=None)   # Returns and writes default if 
 ```python
 <dict> = dict(<collection>)                     # Creates a dict from coll. of key-value pairs.
 <dict> = dict(zip(keys, values))                # Creates a dict from two collections.
-<dict> = dict.fromkeys(keys [, value])          # Creates a dict from collection of keys.
+<dict> = dict.fromkeys(keys [, value])          # Creates a dict from collection of keys. Intial values are all 'value', 'None' by default.
 ```
 
 ```python

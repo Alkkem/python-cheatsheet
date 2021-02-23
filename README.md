@@ -31,11 +31,13 @@ List
 ```python
 <list> = <list>[from_inclusive : to_exclusive : ±step_size] # List slicing
 <list> = <list>[:]                                          # Raw list cloning
+len(<list>)                                                 # Length of the list
 ```
 
 ```python
 <list>.append(<el>)            # Or: <list> += [<el>]
 <list>.extend(<collection>)    # Or: <list> += <collection>
+<list> = <int> * <list>        # List repeated n times
 ```
 
 ```python
@@ -62,8 +64,12 @@ list_of_chars    = list(<str>)
 <bool> = <el> in <list>        # True if element is in the list
 <list>.insert(<int>, <el>)     # Inserts item at index and moves the rest to the right.
 <el> = <list>.pop([<int>])     # Removes and returns item at index or from the end.
+del <list>[<int>]              # Delete element in specified position
 <list>.remove(<el>)            # Removes first occurrence of the item or raises ValueError.
 <list>.clear()                 # Removes all items. Also works on dictionary and set.
+```
+```python
+<zip> = zip(<list_1>, <list_2>, ...)   # Zips lists into an iterable zip object (list of tuples)
 ```
 
 
@@ -145,9 +151,16 @@ Tuple
 -----
 **Tuple is an immutable and hashable list.**
 ```python
-<tuple> = ()
+<tuple> = ()                                # Empty tuple
 <tuple> = (<el>,)                           # Or: <el>,
 <tuple> = (<el_1>, <el_2> [, ...])          # Or: <el_1>, <el_2> [, ...]
+```
+
+```python
+<tuple> = <tuple>[from_inc : to_excl : ±step]   # Tuple slicing
+<tuple> = <tuple>[:]                            # Raw tuple cloning
+<bool> = <el> in <tuple>                        # True if element is in tuple
+a,b = b,a                                       # Exchange value of a and b using tuple unboxing
 ```
 
 ### Named Tuple

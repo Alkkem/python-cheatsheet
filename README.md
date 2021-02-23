@@ -29,7 +29,8 @@ if __name__ == '__main__':     # Runs main() if file wasn't imported.
 List
 ----
 ```python
-<list> = <list>[from_inclusive : to_exclusive : ±step_size]
+<list> = <list>[from_inclusive : to_exclusive : ±step_size] # List slicing
+<list> = <list>[:]                                          # Raw list cloning
 ```
 
 ```python
@@ -38,10 +39,10 @@ List
 ```
 
 ```python
-<list>.sort()
-<list>.reverse()
-<list> = sorted(<collection>)
-<iter> = reversed(<list>)
+<list>.sort()                  # Sorts list in place
+<list>.reverse()               # Reverses list in place
+<list> = sorted(<collection>)  # Returns sorted list, keeps the original intact
+<iter> = reversed(<list>)      # Returs an ITERATOR through the list in reverse, to use as iterable structure
 ```
 
 ```python
@@ -58,6 +59,7 @@ list_of_chars    = list(<str>)
 ```python
 <int> = <list>.count(<el>)     # Returns number of occurrences. Also works on strings.
 <int> = <list>.index(<el>)     # Returns index of the first occurrence or raises ValueError.
+<bool> = <el> in <list>        # True if element is in the list
 <list>.insert(<int>, <el>)     # Inserts item at index and moves the rest to the right.
 <el> = <list>.pop([<int>])     # Removes and returns item at index or from the end.
 <list>.remove(<el>)            # Removes first occurrence of the item or raises ValueError.

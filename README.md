@@ -44,7 +44,7 @@ len(<list>)                                                 # Length of the list
 <list>.sort()                  # Sorts list in place
 <list>.reverse()               # Reverses list in place
 <list> = sorted(<collection>)  # Returns sorted list, keeps the original intact
-<iter> = reversed(<list>)      # Returs an ITERATOR through the list in reverse, to use as iterable structure
+<iter> = reversed(<list>)      # Returs an ITERATOR through the list in reverse
 ```
 
 ```python
